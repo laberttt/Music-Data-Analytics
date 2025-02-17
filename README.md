@@ -1,4 +1,4 @@
-<h1 align="center">Análise das Músicas Mais Populares ao Longo do Tempo 🎵</h1>
+<h1 align="center">Análise das Músicas Mais <br> Populares ao Longo do Tempo 🎵</h1>
 <br>
 
 # Integrantes
