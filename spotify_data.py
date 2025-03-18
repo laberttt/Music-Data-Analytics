@@ -28,9 +28,10 @@ def get_top_tracks(year):
             release_date = track["album"]["release_date"]
             album_id = track["album"]["id"]
             
-            # Buscar gêneros musicais do álbum
-            album_info = sp.album(album_id)
-            genres = album_info.get("genres", [])
+            # Buscar gêneros musicais do primeiro artista principal
+            artist_id = track["artists"][0]["id"]
+            artist_info = sp.artist(artist_id)
+            genres = artist_info.get("genres", [])
             genre_str = ", ".join(genres) if genres else "Unknown"
             
             tracks.append([year, track_name, artist_name, album_name, duration_ms, genre_str, track_id, release_date, popularity])
@@ -45,7 +46,7 @@ def get_top_tracks(year):
     
     return tracks
 
-def save_tracks_to_csv(start_year, end_year, filename="top_tracks.csv"):
+def save_tracks_to_csv(start_year, end_year, filename="top_tracks_spotify_4.csv"):
     all_tracks = []
     for year in range(start_year, end_year + 1):
         all_tracks.extend(get_top_tracks(year))
