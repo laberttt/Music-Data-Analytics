@@ -7,6 +7,6 @@
 * [Labert Paixão Ribeiro](https://github.com/laberttt)
 
 # Abordagem de Coleta dos Dados
-- Utilização de APIs como Spotify, Billboard, Genius para obter informações das músicas.
+- Utilização de APIs como Spotify, YouTube, Genius para obter informações das músicas.
 - Os dados coletados incluirão: nome da música, artista, ano de lançamento, número de streams/vendas, posição nos rankings e gênero musical.
 - O dataset será atualizado mensalmente ou semestralmente, dependendo da disponibilidade dos dados.
