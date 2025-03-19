@@ -17,7 +17,7 @@ def get_top_tracks(year):
     results = sp.search(q=query, type="track", limit=50, market="US")
     
     tracks = []
-    while len(tracks) < 50:
+    while len(tracks) < 100:
         for track in results["tracks"]["items"]:
             track_name = track["name"]
             artist_name = ", ".join(artist["name"] for artist in track["artists"])
@@ -36,17 +36,17 @@ def get_top_tracks(year):
             
             tracks.append([year, track_name, artist_name, album_name, duration_ms, genre_str, track_id, release_date, popularity])
         
-        if len(tracks) < 50 and results["tracks"].get("next"):
+        if len(tracks) < 100 and results["tracks"].get("next"):
             results = sp.next(results["tracks"])
         else:
             break
     
-    tracks = tracks[:50]
+    tracks = tracks[:100]
     tracks.sort(key=lambda x: x[8], reverse=True)  # Ordenar por popularidade
     
     return tracks
 
-def save_tracks_to_csv(start_year, end_year, filename="top_tracks_spotify_4.csv"):
+def save_tracks_to_csv(start_year, end_year, filename="top_tracks_spotify_5.csv"):
     all_tracks = []
     for year in range(start_year, end_year + 1):
         all_tracks.extend(get_top_tracks(year))

@@ -12,7 +12,7 @@
 - O dataset será atualizado mensalmente ou semestralmente, dependendo da disponibilidade dos dados.
 
 ## Drescrição do conjunto de dados 📌
-Este projeto coleta e armazena as 50 músicas mais populares de cada ano dentro de um intervalo especificado, utilizando a API do Spotify. Os dados incluem informações como nome da música, artista, álbum, duração, gênero, ID da faixa, data de lançamento e popularidade.
+Este projeto coleta e armazena as 100 músicas mais populares de cada ano dentro de um intervalo especificado, utilizando a API do Spotify. Os dados incluem informações como nome da música, artista, álbum, duração, gênero, ID da faixa, data de lançamento e popularidade.
 
 ## Processo de Coleta dos dados 🔍
 Os dados são coletados por meio da API do Spotify, utilizando a biblioteca spotipy em Python. O script realiza buscas por ano, com isso, filtrando as músicas mais populares e organizando os resultados de forma decrescente por popularidade. A coleta é feita usando credenciais da API, armazenadas de forma segura em variáveis de ambiente.
