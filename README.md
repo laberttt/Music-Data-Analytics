@@ -7,15 +7,15 @@
 * [Labert Paixão Ribeiro](https://github.com/laberttt)
 
 ## Abordagem de Coleta dos Dados
-- Utilização da API do Spotify para obter informações das músicas.
+- Utilização da API do Spotify e de Web scraping no site Kworb para obter informações das músicas.
 - Os dados coletados incluirão: nome da música, artista, ano de lançamento, número de streams/vendas, posição nos rankings e gênero musical.
-- O dataset será atualizado mensalmente ou semestralmente, dependendo da disponibilidade dos dados.
+- O dataset será atualizado anualmente, dependendo da disponibilidade dos dados.
 
 ## Drescrição do conjunto de dados 📌
-Este projeto coleta e armazena as 100 músicas mais populares de cada ano dentro de um intervalo especificado, utilizando a API do Spotify. Os dados incluem informações como nome da música, artista, álbum, duração, gênero, ID da faixa, data de lançamento e popularidade.
+Este projeto coleta e armazena as 100 músicas mais populares de cada ano dentro de um intervalo especificado, utilizando a API do Spotify e o Web scraping. Os dados incluem informações como nome da música, artista, álbum, duração, gênero, ID da faixa, data de lançamento e popularidade.
 
 ## Processo de Coleta dos dados 🔍
-Os dados são coletados por meio da API do Spotify, utilizando a biblioteca spotipy em Python. O script realiza buscas por ano, com isso, filtrando as músicas mais populares e organizando os resultados de forma decrescente por popularidade. A coleta é feita usando credenciais da API, armazenadas de forma segura em variáveis de ambiente.
+Os dados são coletados por meio da API do Spotify, utilizando a biblioteca spotipy em Python, como também são coletados dados por meio do site Kworb utilizando Web scraping. O script realiza buscas por ano, com isso, filtrando as músicas mais populares e organizando os resultados de forma decrescente por popularidade. A coleta é feita usando credenciais da API, armazenadas de forma segura em variáveis de ambiente.
 
 ## Estrutura dos Dados 📊
 Cada linha do conjunto de dados representa uma música, e as colunas são as seguintes:
