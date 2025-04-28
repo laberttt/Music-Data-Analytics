@@ -7,7 +7,7 @@
 * [Labert Paixão Ribeiro](https://github.com/laberttt)
 
 ## Abordagem de Coleta dos Dados
-- Utilização de APIs como Spotify, YouTube, Genius para obter informações das músicas.
+- Utilização da API do Spotify para obter informações das músicas.
 - Os dados coletados incluirão: nome da música, artista, ano de lançamento, número de streams/vendas, posição nos rankings e gênero musical.
 - O dataset será atualizado mensalmente ou semestralmente, dependendo da disponibilidade dos dados.
 
@@ -34,4 +34,4 @@ Cada linha do conjunto de dados representa uma música, e as colunas são as seg
 
 ## Acesso aos dados 📂
 Os dados coletados estão armazenados em um arquivo CSV e podem ser acessados por meio do seguinte link do Google Drive:
-[**Music Data Analytics**](https://drive.google.com/file/d/1ht1N0jPmwRCvgLsZfkbd9uGZaLAoqtGT/view?usp=sharing)
+[**Music Data Analytics**](https://drive.google.com/drive/folders/17yX19rz02iQdvcghN58nbjKYe1gMgGdS?usp=sharing)
