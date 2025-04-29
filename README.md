@@ -33,5 +33,5 @@ Cada linha do conjunto de dados representa uma música, e as colunas são as seg
 | Popularity    | Popularidade (0 a 100) | 95 |
 
 ## Acesso aos dados 📂
-Os dados coletados estão armazenados em um arquivo CSV e podem ser acessados por meio do seguinte link do Google Drive:
+Os dados coletados estão armazenados em dois arquivos CSV e podem ser acessados por meio do seguinte link do Google Drive:
 [**Music Data Analytics**](https://drive.google.com/drive/folders/17yX19rz02iQdvcghN58nbjKYe1gMgGdS?usp=sharing)
